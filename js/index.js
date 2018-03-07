@@ -11,46 +11,4 @@ $(document).ready(function() {
 		console.log(indexItems[i]);
 		console.log(indexItems[i].tagName);
 	}
-
-	$("#closeButton").click(function() {
-		$("#notification").toggle(500);
-	});
-
-	$(".buttons").click(function() {
-		$("p").toggle(1000);
-	});
-
-	//js hide n' seek demonstration
-	
-	var elP = document.querySelector('p');
-	elP.text = "none";
-	
-
-	//console.log('execute before load...?');
-
-	document.onload = doEverything();
-
-	//console.log('loaded and everything is done');
-
-	function doEverything() {
-
-		console.log("...js file successfully loaded...");
-
-		function catchUp() {
-
-			console.log("...catchUp f/n called.");
-
-			document.querySelector('h1').innerHTML = "Everything is done!";
-
-			$('h1').text("Now you're working with power!").addClass('red');
-			
-			var elDoc = document;
-			console.log(elDoc);
-
-		}
-
-		catchUp();
-
-	}
-
 });
